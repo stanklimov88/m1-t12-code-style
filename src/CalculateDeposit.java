@@ -24,12 +24,13 @@ public class CalculateDeposit {
     void doCalculation( ) {
         int typeOfDeposit ;
         int periodOfDeposit;
+        int amount = 0;
         double depositResult = 0;
 
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Введите сумму вклада в рублях:") ;
-        int amount = scanner.nextInt();
+        amount = scanner.nextInt();
 
         System.out.println("Введите срок вклада в годах:") ;
         periodOfDeposit = scanner.nextInt( );
